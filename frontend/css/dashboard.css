@@ -1,0 +1,389 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6fa;
+    color: #1e293b;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    background: #172554;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 8px 35px;
+}
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+    background: #3b82f6;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo h2 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.logo span {
+    font-size: 12px;
+    color: #bfdbfe;
+}
+
+.menu-label {
+    font-size: 11px;
+    color: #94a3b8;
+    padding: 0 12px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.menu-item {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #cbd5e1;
+    padding: 14px 13px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-item:hover {
+    background: #263b70;
+    color: white;
+}
+
+.menu-item.active {
+    background: #2563eb;
+    color: white;
+}
+
+.menu-icon {
+    width: 22px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding: 20px 5px 0;
+}
+
+.system-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #203565;
+    padding: 13px 10px;
+    border-radius: 9px;
+}
+
+.system-status strong {
+    display: block;
+    font-size: 12px;
+}
+
+.system-status small {
+    display: block;
+    font-size: 11px;
+    color: #bfdbfe;
+    margin-top: 4px;
+}
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+    background: #22c55e;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.topbar {
+    height: 90px;
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar h1 {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.topbar p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.network-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 13px;
+    border-radius: 20px;
+    background: #f0fdf4;
+    color: #15803d;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.content-area {
+    padding: 25px;
+}
+
+/* WELCOME */
+.welcome-card {
+    min-height: 220px;
+    background: linear-gradient(120deg, #1d4ed8, #2563eb, #3b82f6);
+    border-radius: 15px;
+    padding: 35px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.welcome-text {
+    max-width: 650px;
+}
+
+.welcome-tag {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #bfdbfe;
+}
+
+.welcome-card h2 {
+    font-size: 27px;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+
+.welcome-card p {
+    color: #dbeafe;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.welcome-symbol {
+    font-size: 160px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.15);
+    padding-right: 35px;
+}
+
+.section-heading {
+    font-size: 18px;
+    margin: 30px 0 18px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.feature-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 23px;
+    transition: 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.feature-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.feature-icon.blue {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.feature-icon.green {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.feature-icon.purple {
+    background: #f3e8ff;
+    color: #9333ea;
+}
+
+.feature-icon.orange {
+    background: #ffedd5;
+    color: #ea580c;
+}
+
+.feature-card h3 {
+    font-size: 16px;
+    margin-bottom: 9px;
+}
+
+.feature-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #64748b;
+    min-height: 42px;
+}
+
+.feature-button {
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* IFRAME */
+.page-container {
+    width: 100%;
+    min-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.page-container iframe {
+    width: 100%;
+    height: calc(100vh - 140px);
+    min-height: 600px;
+    border: none;
+    display: block;
+    background: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .sidebar {
+        width: 210px;
+        min-width: 210px;
+    }
+
+    .content-area {
+        padding: 15px;
+    }
+
+    .welcome-card {
+        padding: 25px;
+    }
+
+    .welcome-card h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 650px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 100%;
+        padding: 15px;
+    }
+
+    .logo {
+        padding-bottom: 18px;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sidebar-bottom {
+        display: none;
+    }
+
+    .topbar {
+        padding: 15px;
+        height: auto;
+        gap: 12px;
+    }
+
+    .topbar h1 {
+        font-size: 18px;
+    }
+
+    .network-status {
+        font-size: 10px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-symbol {
+        display: none;
+    }
+}

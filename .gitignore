@@ -1,0 +1,9 @@
+# Khong day file cau hinh moi truong len GitHub
+.env
+
+# File tam
+*.log
+
+# Thu muc he thong
+.DS_Store
+Thumbs.db
