@@ -110,7 +110,6 @@
                     <th>Bệnh nhân</th>
                     <th>Bác sĩ</th>
                     <th>Chẩn đoán</th>
-                    <th>Mã SHA-256</th>
                     <th>Giao dịch Blockchain</th>
                     <th>Ngày tạo</th>
                 </tr>

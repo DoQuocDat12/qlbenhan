@@ -37,7 +37,6 @@ async function taiDanhSachBenhAn() {
                 benhAn.ten_benh_nhan,
                 benhAn.dia_chi_vi,
                 benhAn.chan_doan,
-                benhAn.ma_bam,
                 benhAn.ma_giao_dich,
                 benhAn.ngay_tao
             ];
