@@ -163,14 +163,14 @@
 <!-- ABI Smart Contract -->
 <script src="../blockchain/contract-info.js"></script>
 
-<!-- Kết nối MetaMask -->
 <script src="./js/wallet.js"></script>
 
 <!-- Kết nối Smart Contract -->
 <script src="./js/blockchain.js"></script>
 
-<!-- Xử lý tạo bệnh án -->
+<!-- Xử lý tạo bệnh an-->
 <script src="./js/tao-benh-an.js"></script>
+
 
 </body>
 </html>
